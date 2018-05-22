@@ -19,7 +19,7 @@ $(document).ready ->
 showResult = (result, operation, a, b=null) ->
   $('input').val ''
   if operation == 'sqrt'
-    $('.result').html "Square root of of #{a} = <b>#{result}</b>"
+    $('.result').html "Square root of #{a} = <b>#{result}</b>"
   else
     $('.result').html "#{a} #{operation} #{b} = <b>#{result}</b>"
 

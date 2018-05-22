@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-body">
+    <%= form_with(model: Calculator.new,format: :json, id: 'new_calculator') do |f|   %>
+      <div class="columns">
+        <div class="column col-4">
+          <%= f.number_field :a, step: '0.01', class: 'form-input' %>
+          <p class="form-input-hint"></p>
+        </div>
+        <div class="column col-2">
+          <%= f.select :operation, options_for_select(Calculator::OPERATIONS), {}, class: 'form-select' %>
+        </div>
+        <div class="column col-4">
+          <%= f.number_field :b, step: '0.01', class: 'form-input' %>
+          <p class="form-input-hint"></p>
+        </div>
+        <div class="column col-2">
+          <%= f.submit 'Calculate!', class: 'btn' %>
+        </div>
+      </div>
+    <% end %>
+    <p class="result"></p>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<h1>Calculator</h1>
+<div class="columns">
+  <div class="column col-6">
+    <%= render 'form' %>
+  </div>
+  <div class="column col-6">
+    <table id="calculations" class="table">
+      <thead>
+        <tr>
+          <th>Number A</th>
+          <th>Operation</th>
+          <th>Number B</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @calculations %>
+      </tbody>
+    </table>
+  </div>
+</div>

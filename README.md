@@ -18,4 +18,6 @@ $ rails db:setup
 
 * Tests:
 
-Sorry, no tests.
+```
+$ rails test:system
+```

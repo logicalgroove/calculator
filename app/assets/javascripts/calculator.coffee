@@ -14,7 +14,7 @@ $(document).ready ->
     $('.form-input-hint').html ''
     errors = xhr.responseJSON
     $.each errors, (key, value) ->
-      $("input#calculator_#{key}").next().html value
+      $("input#calculator_#{key}").next().html value.join(' and ')
 
 showResult = (result, operation, a, b=null) ->
   $('input').val ''

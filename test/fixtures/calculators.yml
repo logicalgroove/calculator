@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  operation: MyString
-  a: 1.5
-  b: 1.5
-  result: 1.5
+  operation: '*'
+  a: 3
+  b: 2
+  result: 6
+  user_id: 1
 
 two:
-  operation: MyString
-  a: 1.5
-  b: 1.5
-  result: 1.5
+  operation: '+'
+  a: 10
+  b: 8
+  result: 18
+  user_id: 2
